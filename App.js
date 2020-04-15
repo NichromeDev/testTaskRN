@@ -65,7 +65,8 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
     paddingLeft: 15,
     paddingRight: 15,
-    paddingBottom: 40,
+    paddingBottom: 30,
+    marginBottom: 74,
     flexDirection: "column",
     backgroundColor: "#fff"
   },
