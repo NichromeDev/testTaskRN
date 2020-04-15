@@ -5,8 +5,8 @@ export default props => <Text {...props} style={[styles.text, props.style]}>{pro
 
 const styles = StyleSheet.create({
   text: {
-    fontFamily: "Roboto",
+    //fontFamily: "Roboto",
     fontSize: 16,
-    lineHeight: "19px"
+    lineHeight: 19
   },
 });

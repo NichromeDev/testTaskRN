@@ -40,19 +40,22 @@ export default () => (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>Свободные заявки</Text>
       <View style={styles.buttonList}>
-        <Text style={styles.buttonTextActive}>
-          Все<Text style={styles.buttonNumberActive}>9</Text>
-        </Text>
-        <Text style={styles.buttonText}>
-          На сегодня<Text style={styles.buttonNumber}>6</Text>
-        </Text>
-        <Text style={styles.buttonText}>
-          На завтра<Text style={styles.buttonNumber}>2</Text>
-        </Text>
+        <View style={styles.buttonTextActive}>
+          <Text style={styles.textActive}>Все</Text>
+          <Text style={styles.number}>9</Text>
+        </View>
+        <View style={styles.buttonText}>
+          <Text style={styles.text}>На сегодня</Text>
+          <Text style={styles.number}>6</Text>
+        </View>
+        <View style={styles.buttonText}>
+          <Text style={styles.text}>На завтра</Text>
+          <Text style={styles.number}>2</Text>
+        </View>
       </View>
       {CardArray}
     </ScrollView>
-    <Tab/>
+    <Tab />
   </Fragment>
 );
 
@@ -60,84 +63,81 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: Constants.statusBarHeight,
-    paddingLeft: "15px",
-    paddingRight: "15px",
-    paddingBottom: "400px",
+    paddingLeft: 15,
+    paddingRight: 15,
+    paddingBottom: 40,
     flexDirection: "column",
     backgroundColor: "#fff"
   },
   title: {
     width: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: "40px",
-    marginBottom: "40px",
-    letterSpacing: "0.5px"
+    textAlign: "center",
+    marginTop: 40,
+    marginBottom: 40,
+    letterSpacing: 0.5
   },
   buttonList: {
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    height: "32px",
+    height: 32,
     alignItems: "center",
     justifyContent: "space-around",
-    marginBottom: "25px"
+    marginBottom: 25
   },
   buttonText: {
-    padding: "9px",
+    padding: 5,
     height: "100%",
-    borderRadius: "16px",
-    fontSize: "14px",
-    lineHeight: "16px",
-    letterSpacing: "0.5px",
+    borderRadius: 16,
+    borderWidth: 0,
+    borderColor: "rgba(189, 189, 189, 0.15)",
+    fontSize: 14,
+    lineHeight: 16,
+    letterSpacing: 0.5,
     color: "#2270B3",
     backgroundColor: "rgba(189, 189, 189, 0.15)",
+    overflow: "hidden",
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center"
   },
-  buttonNumber: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginLeft: "8px",
-    height: "16px",
-    minWidth: "16px",
-    borderRadius: "50%",
-    backgroundColor: "white",
-    fontSize: "12px",
-    lineHeight: "14px",
-    letterSpacing: "0.5px",
-    color: "#437787"
-  },
   buttonTextActive: {
-    padding: "9px",
+    padding: 5,
     height: "100%",
-    borderRadius: "16px",
-    fontSize: "14px",
-    lineHeight: "16px",
-    letterSpacing: "0.5px",
+    borderRadius: 16,
+    borderWidth: 0,
+    borderColor: "#2270B3",
+    fontSize: 14,
+    lineHeight: 16,
+    letterSpacing: 0.5,
     color: "white",
     backgroundColor: "#2270B3",
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "center"
-  },
-  buttonNumberActive: {
-    display: "flex",
-    alignItems: "center",
     justifyContent: "center",
-    marginLeft: "8px",
-    height: "16px",
-    minWidth: "16px",
-    borderRadius: "50%",
+    overflow: "hidden"
+  },
+  textActive: {
+    color: "white"
+  },
+  text: {
+    color: "#2270B3"
+  },
+  number: {
+    paddingTop: 1,
+    textAlign: "center",
+    color: "#437787",
+    width: 16,
+    height: 16,
+    borderWidth: 0,
+    borderRadius: 8,
+    overflow: "hidden",
     backgroundColor: "white",
-    fontSize: "12px",
-    lineHeight: "14px",
-    letterSpacing: "0.5px",
-    color: "#437787"
+    marginLeft: 3,
+    fontSize: 12,
+    lineHeight: 14,
+    letterSpacing: 0.5,
   }
 });

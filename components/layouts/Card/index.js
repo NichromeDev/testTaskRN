@@ -34,49 +34,49 @@ export default ({ title, address, distance, quantity, company, price }) => (
 
 const styles = StyleSheet.create({
   view: {
-    padding: "18px",
+    padding: 18,
     display: "flex",
     flexDirection: "column",
     alignItems: "flex-start",
     justifyContent: "center",
-    borderWidth: "1px",
+    borderWidth: 1,
     borderColor: "rgba(175, 177, 184, 0.8)",
-    boxSizing: "border-box",
-    borderRadius: "10px",
-    marginBottom: "16px"
+    //boxSizing: "border-box",
+    borderRadius: 10,
+    marginBottom: 16
   },
   title: {
     fontWeight: "bold",
     color: "#333333",
-    marginBottom: "16px"
+    marginBottom: 16
   },
   rowList: {
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "flex-start",
-    marginBottom: "6px"
+    marginBottom: 6
   },
   text1: {
     color: "#333333"
   },
   text2: {
-    width: "3px",
-    height: "3px",
-    borderRadius: "50%",
-    marginLeft: "8px",
-    marginRight: "8px",
+    width: 3,
+    height: 3,
+    borderRadius: 1.5,
+    marginLeft: 8,
+    marginRight: 8,
     backgroundColor: "#BDBDBD"
   },
   text3: {
-    fontSize: "14px",
-    lineHeight: "16px",
+    fontSize: 14,
+    lineHeight: 16,
     color: "#828282"
   },
   text4: {
     fontWeight: "bold",
-    fontSize: "18px",
-    lineHeight: "21px",
+    fontSize: 18,
+    lineHeight: 21,
     color: "#333333"
   },
   bottom: {
@@ -87,14 +87,14 @@ const styles = StyleSheet.create({
     justifyContent: "space-between"
   },
   image1: {
-    marginRight: "15px",
-    width: "11px",
-    height: "20px"
+    marginRight: 15,
+    width: 11,
+    height: 20
   },
   image2: {
-    marginLeft: "3px",
-    marginRight: "23px",
-    width: "5px",
-    height: "11px"
+    marginLeft: 3,
+    marginRight: 23,
+    width: 5,
+    height: 11
   }
 });
